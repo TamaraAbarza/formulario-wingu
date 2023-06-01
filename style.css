@@ -136,3 +136,17 @@ textarea {
     text-align: left;
     margin-bottom: 40px;
 }
+
+/* Estilos para tamaños de pantalla medianos */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(90deg, #033aa0, #7e9acf, #d5e6f6);
+  }
+}
+
+/* Estilos para tamaños de pantalla pequeños */
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(90deg, #033aa0, #7e9acf, #d5e6f6);
+  }
+}
