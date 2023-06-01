@@ -7,7 +7,8 @@
   body {
     background-color: #085cfc;
   
-   /* background: linear-gradient(160deg, #085cfc, white); /*Nuevo cambio*/
+   background: linear-gradient(70deg, #033aa0, #085cfc, rgb(108, 158, 233)); 
+
   }
   
   .form-register {
@@ -135,4 +136,3 @@ textarea {
     text-align: left;
     margin-bottom: 40px;
 }
-
