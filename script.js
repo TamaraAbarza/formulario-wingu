@@ -10,6 +10,7 @@ function validarFormulario() {
     var apellidoInput = document.getElementById("last_name");
     var correoInput = document.getElementById("email");
     var telefonoInput = document.getElementById("phone");
+   
 
     nombreInput.classList.remove("campo-obligatorio");
     apellidoInput.classList.remove("campo-obligatorio");
@@ -54,3 +55,26 @@ function validarFormulario() {
 
     return true;
 }
+
+
+// Validar que solo se ingresen números en el campo de teléfono
+var telefonoInput = document.getElementById("phone");
+telefonoInput.addEventListener("input", function () {
+  this.value = this.value.replace(/[^0-9]/g, "");
+});
+
+// Validar que solo se ingresen letras y acentos en los campos de nombre y apellido y empresa
+var nombreInput = document.getElementById("first_name");
+var apellidoInput = document.getElementById("last_name");
+var empresaInput= document.getElementById("company");
+
+
+nombreInput.addEventListener("input", function () {
+  this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s']/g, "");
+});
+apellidoInput.addEventListener("input", function () {
+  this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s']/g, "");
+});
+empresaInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s']/g, "");
+  });
