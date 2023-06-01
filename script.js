@@ -38,21 +38,21 @@ function validarFormulario() {
         return false;
     }
 
-    var correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var correoRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!correo.match(correoRegex)) {
-        alert("Ingrese una dirección de correo electrónico válida.");
+        alert("Ingrese una dirección de correo electrónico válido.");
         correoInput.classList.add("campo-obligatorio");
         return false;
     }
 
+    // Validar teléfono
     if (selectElement.value === "Telefono") {
-        var telefonoRegex = /^\d+$/;
+        var telefonoRegex = /^\d{10}$/; 
         if (!telefono.match(telefonoRegex)) {
             alert("Ingrese un número de teléfono válido.");
             return false;
         }
     }
-
     return true;
 }
 
