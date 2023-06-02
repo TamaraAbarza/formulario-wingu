@@ -136,3 +136,10 @@ textarea {
     text-align: left;
     margin-bottom: 40px;
 }
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("");
+    background-color: blue;
+  }
+}
