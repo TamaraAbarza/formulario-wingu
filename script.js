@@ -50,6 +50,7 @@ function validarFormulario() {
         var telefonoRegex = /^\d{10}$/; 
         if (!telefono.match(telefonoRegex)) {
             alert("Ingrese un número de teléfono válido.");
+            telefonoInput.classList.add("campo-obligatorio");
             return false;
         }
     }
@@ -77,4 +78,4 @@ apellidoInput.addEventListener("input", function () {
 });
 empresaInput.addEventListener("input", function () {
     this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s']/g, "");
-  });
+});
