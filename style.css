@@ -140,6 +140,6 @@ textarea {
 @media (max-width: 767px) {
   body {
     background-image: url("");
-    background-color: blue;
+    background-color: #085cfc;
   }
 }
